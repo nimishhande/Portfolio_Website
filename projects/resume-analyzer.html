@@ -1,0 +1,142 @@
+<!-- Resume Analyzer Project Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Resume Analyzer | Nimish Hande</title>
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f9f9ff;
+    }
+    .project-section {
+      background-color: #ffffff;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 0 20px rgba(33, 37, 41, 0.1);
+      margin-top: 50px;
+    }
+    .project-section h1 {
+      font-size: 32px;
+      color: #343a40;
+    }
+    .project-section ul li::marker {
+      color: #6610f2;
+    }
+    .resume-icon {
+      font-size: 40px;
+      color: #6610f2;
+    }
+    .highlight {
+      background-color: #ede7f6;
+      padding: 10px 15px;
+      border-left: 4px solid #6610f2;
+      margin-bottom: 15px;
+      border-radius: 6px;
+    }
+    .tech-stack {
+      background: #e3f2fd;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="profile-img">
+      <img src="../Profile.jpeg" alt="" class="img-fluid rounded-circle">
+    </div>
+    <a href="../index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Nimish Hande</h1>
+    </a>
+    <div class="social-links text-center">
+      <a href="https://github.com/nimishhande" class="github" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/nimish-hande-122147253/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.instagram.com/nimish_hande/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="mailto:nimishhande@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
+    </div>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="../index.html#hero"><i class="bi bi-house navicon"></i> Home</a></li>
+        <li><a href="../index.html#about"><i class="bi bi-person navicon"></i> About Me</a></li>
+        <li><a href="../index.html#portfolio"><i class="bi bi-briefcase navicon"></i> Experience</a></li>
+        <li><a href="../index.html#skills"><i class="bi bi-bar-chart navicon"></i> Skills</a></li>
+        <li><a href="../index.html#project" class="active"><i class="bi bi-layers navicon"></i> Projects</a></li>
+        <li><a href="../index.html#testimonials"><i class="bi bi-trophy navicon"></i> Achievements</a></li>
+        <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main" style="margin-left: 260px; padding: 80px 40px 60px 40px;">
+    <div class="container project-section">
+      <h1><i class="bi bi-robot resume-icon"></i> Resume Analyzer using LangChain & OpenAI</h1>
+      <div class="highlight">
+        <strong>Problem Solved:</strong> Streamlines the recruitment process by automatically analyzing resumes against job descriptions, scoring candidates, and providing improvement suggestions.
+      </div>
+      <div class="highlight">
+        <strong>Description:</strong> This tool reads resumes (PDF/docx), parses content using NLP, and compares it to job descriptions via LangChain prompt templates and OpenAI embeddings. Candidates receive a score and feedback.
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Inputs</h4>
+          <ul>
+            <li>Candidate Resume (PDF/DOCX)</li>
+            <li>Job Description Text</li>
+          </ul>
+          <h4>Outputs</h4>
+          <ul>
+            <li>Match Score (0–100%)</li>
+            <li>Strengths & Gaps (Skills vs JD)</li>
+            <li>Suggested improvements</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>Features</h4>
+          <ul>
+            <li>LangChain for multi-step prompt chaining</li>
+            <li>OpenAI Embeddings & GPT-3.5 for semantic matching</li>
+            <li>Streamlit UI for upload and live feedback</li>
+            <li>Downloadable analysis report</li>
+          </ul>
+          <h4>Tech Stack</h4>
+          <div class="tech-stack">Python, Streamlit, LangChain, OpenAI API, PyMuPDF</div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="https://github.com/nimishhande/resume-analyzer-ai" target="_blank" class="btn btn-primary">
+          <i class="bi bi-box-arrow-up-right"></i> View Code on GitHub
+        </a>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
